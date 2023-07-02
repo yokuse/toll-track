@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "./types";
+
+service DistanceAggregator {
+  rpc AggregateDistance(AggregateDistanceRequest) returns (None);
+}
+
+message None {}
+
+message GetInvoiceRequest {
+  int32 ObuID = 1;
+}
+
+message AggregateDistanceRequest {
+  int32 ObuID = 1;
+  double Value = 2;
+  int64 Unix = 3;
+}
