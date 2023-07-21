@@ -9,4 +9,4 @@ Building different microservices to handle minute tasks.
 Kafka to send messages to topics for OBU receiver and distance calculator
 websocket connection for obu
 Some DB to store the data for invoicer
-Prometheus, grafana
+Prometheus, grafana (future)
